@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
-dotenv.config({ path: ".env.local" });
+//import dotenv from "dotenv";
+//dotenv.config({ path: ".env.local" });
 import nodemailer from "nodemailer";
 
 export const config = {
