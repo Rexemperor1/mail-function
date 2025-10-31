@@ -1,10 +1,8 @@
 {
-  "routes": [
-    {
-      "src": "/api/sendmail",
-      "methods": ["POST"],
-      "dest": "/api/sendmail.js",
-      "override": true
+  "version": 2,
+  "functions": {
+    "api/sendmail.js": {
+      "runtime": "nodejs18.x"
     }
-  ]
+  }
 }
