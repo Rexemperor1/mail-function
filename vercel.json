@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/sendmail.js": {
-      "runtime": "nodejs20.x"
+  "builds": [
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
-    { "src": "/api/sendmail", "dest": "/api/sendmail.js" }
+    {
+      "src": "/(.*)",
+      "dest": "api/index.js"
+    }
   ]
 }
