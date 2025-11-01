@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 
 export const config = {
   api: {
-    bodyParser: true, // ✅ Enable JSON parsing!
+    bodyParser: true,
   },
 };
 
@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     return res.status(401).json({ message: "Unauthorized Access" });
   }
 
-  const { email, code } = req.body; // ✅ Now req.body is populated!
+  const { email, code } = req.body;
 
   if (!email || !code) {
     return res.status(400).json({ message: "Email and code are required" });
