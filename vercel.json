@@ -4,5 +4,8 @@
     "api/sendmail.js": {
       "runtime": "nodejs20.x"
     }
-  }
+  },
+  "routes": [
+    { "src": "/api/sendmail", "dest": "/api/sendmail.js" }
+  ]
 }
